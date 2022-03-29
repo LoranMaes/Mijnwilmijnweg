@@ -13,18 +13,144 @@
     <!--Hieronder is het de specifieke stylesheet voor de homepage-->
     <link rel="stylesheet" href="/styles/homepage.css">
 
+    <!--Font voor de website-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <title>Mijn wil mijn weg - Online Coaching Traject - Candy Junius</title>
 </head>
 <body>
-    <head>
-        
-    </head>
+    <header>
+        <img src="/assets/logo-big.png" alt="logo" class="logo">
+        <nav>
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Coaching</a>
+            <a href="" class="nav-link">Over ons</a>
+            <a href="" class="nav-link">Contact</a>
+            <a href="" class="nav-link">Login</a>
+        </nav>
+    </header>
 
     <main>
-        <p>hallo</p>
+        <div class="container missie">
+            <h1 class="title">Onze missie</h1>
+            <hr>
+            <p class="subtitle">
+                Mijn wil, mijn weg is een self-coaching traject voor adolescenten.
+Onze missie is hen een hoger niveau van zelfkennis bijbrengen en
+hun veerkrachtiger maken in stressvolle situaties
+            </p>
+            <button class="green filled">Meer info</button>
+        </div>
+
+        <div class="container coaching">
+            <h2>Coaching</h2>
+            <div class="card-container">
+                <div class="card buying">
+                    <div class="img">
+                        <img src="/assets/img/box-coaching.png" alt="Box voorbeeld met coaching">
+                    </div>
+                    <p>Coachingbox - met coaching</p>
+                    <ul>
+                        <li>De gids</li>
+                        <li>40 inspiratiekaarten</li>
+                        <li>Coachingsgesprekken</li>
+                        <li>Persoonlijke opvolging</li>
+                    </ul>
+                    <button class="open">Start hier</button>
+                </div>
+
+                <div class="card buying">
+                    <div class="img">
+                        <img src="/assets/img/box-zonder-coaching.png" alt="Box voorbeeld zonder coaching">
+                    </div>
+                    <p>Coachingbox - zonder coaching</p>
+                    <ul>
+                        <li>De gids</li>
+                        <li>40 inspiratiekaarten</li>
+                        <li>Persoonlijke opvolging</li>
+                    </ul>
+                    <button class="open">Start hier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container over-ons">
+            <div class="card">
+                <img src="/assets/coaches/amber.png" alt="Coach amber" class="coach">
+                <p class="name">Amber</p>
+                <ul>
+                    <li>Master Practitioner NLP-coach</li>
+                    <li>Trainer in talenten &amp; ondernemende vaardigheden</li>
+                </ul>
+            </div>
+            <div class="card mid">
+                <img src="/assets/img/candy.png" alt="Hoofdcoach Jenny" class="coach">
+                <p class="name">Jenny</p>
+                <ul>
+                    <li>Master Practitioner NLP-coach</li>
+                    <li>Trainer in talenten &amp; ondernemende vaardigheden</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="/assets/coaches/pieter.png" alt="Coach pieter" class="coach">
+                <p class="name">Pieter</p>
+                <ul>
+                    <li>Master Practitioner NLP-coach</li>
+                    <li>Trainer in talenten &amp; ondernemende vaardigheden</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <hr>
+            <form action="">
+                <label for="">
+                    <input type="text" name="" id="">
+                    <span class="floating-label"></span>
+                </label>
+
+                <label for="">
+                    <input type="text"></input>
+                    <span class="floating-label"></span>
+                </label>
+                <button class="filled">Verzend</button>
+            </form>
+        </div>
     </main>
 
     <footer>
+        <div class="left-footer">
+            <a href="">Home</a>
+            <a href="">Coaching</a>
+            <a href="">Over ons</a>
+            <a href="">Login</a>
+        </div>
+        <div class="mid-footer">
+            <div class="icons-text">
+                <img src="/assets/icons/phone-icon.svg" alt="icon phone footer" class="icon">
+                <p class="footer-text">(+32)4 85 988 106</p>
+            </div>
+            <div class="icons-text">
+                <img src="/assets/icons/mail-icon.svg" alt="icon mail footer" class="icon">
+                <p class="footer-text">candy@mijnwilmijnweg.be</p>
+            </div>
+            <div class="icons-text">
+                <img src="/assets/icons/home-icon.svg" alt="icon home footer" class="icon">
+                <p class="footer-text">Klaterbaan 48, 9300 Aalst</p>
+            </div>
+            <div class="socials">
+                <img src="/assets/icons/facebook-icon.png" alt="icon facebook footer" class="social-icon">
+                <img src="/assets/icons/instagram-icon.png" alt="icon instagram footer" class="social-icon">
+                <img src="/assets/icons/whatsapp-icon.png" alt="icon whatsapp footer" class="social-icon">
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="light">Copyright &copy; 2022 - Mijn wil, mijn weg</p>
+            <p class="light">Powered and designed by Coworking Team 14</p>
+        </div>
     </footer>
 
     <script src="/scripts/index.js"></script>
