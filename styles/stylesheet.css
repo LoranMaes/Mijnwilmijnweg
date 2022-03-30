@@ -145,7 +145,7 @@ textarea:focus + .floating-label,
 textarea:not(:focus):valid + .floating-label{
     transform: translateY(-1.4rem) translateX(-0.4rem);
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 500;
     opacity: 1;
 }
 
