@@ -1,18 +1,3 @@
-<svg width="1280" height="195" viewBox="0 0 1280 195" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_158_5726)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1280 92.2222L1226.67 95.6481C1173.33 99.0741 1066.67 105.926 960 119.63C853.333 133.333 746.667 153.889 640 160.741C533.333 167.593 426.667 160.741 320 133.333C213.333 105.926 106.667 57.963 53.3333 33.9815L-0.00012207 10V195H53.3333C106.667 195 213.333 195 320 195C426.667 195 533.333 195 640 195C746.667 195 853.333 195 960 195C1066.67 195 1173.33 195 1226.67 195H1280V92.2222Z" fill="#E6EEE5"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1280 92.2222L1226.67 95.6481C1173.33 99.0741 1066.67 105.926 960 119.63C853.333 133.333 746.667 153.889 640 160.741C533.333 167.593 426.667 160.741 320 133.333C213.333 105.926 106.667 57.963 53.3333 33.9815L-0.00012207 10V195H53.3333C106.667 195 213.333 195 320 195C426.667 195 533.333 195 640 195C746.667 195 853.333 195 960 195C1066.67 195 1173.33 195 1226.67 195H1280V92.2222Z" stroke="black"/>
-</g>
-<defs>
-<filter id="filter0_d_158_5726" x="-5.00012" y="0" width="1290" height="195" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="-5"/>
-<feGaussianBlur stdDeviation="2.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_158_5726"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_158_5726" result="shape"/>
-</filter>
-</defs>
+<svg width="1280" height="185" viewBox="0 0 1280 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1280 82.2222L1226.67 85.6481C1173.33 89.0741 1066.67 95.9259 960 109.63C853.333 123.333 746.667 143.889 640 150.741C533.333 157.593 426.667 150.741 320 123.333C213.333 95.9259 106.667 47.963 53.3333 23.9815L-0.00012207 0V185H53.3333C106.667 185 213.333 185 320 185C426.667 185 533.333 185 640 185C746.667 185 853.333 185 960 185C1066.67 185 1173.33 185 1226.67 185H1280V82.2222Z" fill="#E6EEE5"/>
 </svg>

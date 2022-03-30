@@ -1,0 +1,196 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mission-home .subtitle{
+    background: var(--white-shadow);
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 12px 4px var(--dark-shadow);
+}
+
+.container.missie{
+    height: 100%;
+    justify-content: center;
+}
+
+.the-fold{
+    background: url(/assets/img/homepage/background.png);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 86.5px);
+}
+
+.the-fold, .second, .third, footer{
+    position: relative;
+}
+
+.second{
+    height: 80vh;
+}
+
+.fourth{
+    height: 60vh;
+}
+
+.third{
+    height: 85vh;
+}
+
+.vector{
+    bottom: 0;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.vector-footer{
+    top: -40%;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.footer{
+    position: relative;
+    z-index: 5;
+    background-color: #f9f9f9f9;
+}
+
+.vector-one{
+    background-image: url(/assets/background/homepage1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vector-two{
+    background-image: url(/assets/background/homepage2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vector-three{
+    background-image: url(/assets/background/homepage3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vector-four{
+    background-image: url(/assets/background/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second{
+    background-color: var(--lightpastelgreen);
+    background-repeat: no-repeat;
+}
+
+.third{
+    background-color: var(--pastelgreen);
+    background-repeat: no-repeat;
+}
+
+.fourth{
+    background-color: var(--lightestpastelgreen);
+    background-repeat: no-repeat;
+}
+
+.container hr{
+    height: 2px;
+    width: 10rem;
+    background: var(--primary);
+    border: none;
+}
+
+.container#coaching-home,
+.container#about-home{
+    position: relative;
+    z-index: 5;
+}
+
+.card-container{
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    margin-top: 2.5rem;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    height: 40rem;
+    width: fit-content;
+    box-shadow: 0 5px 10px 3px var(--dark-shadow);
+    border-radius: 1rem;
+}
+
+.card > ul{
+    list-style: none;
+    padding: 0;
+}
+
+.card button{
+    margin-top: 1.5rem;
+    align-self: center;
+}
+
+.card > ul > li{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.card .img-box{
+    width: 25rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.card .img-box img{
+    width: 100%;
+}
+
+#about-home .card-container{
+    margin-top: 6.5rem;
+}
+
+.card.card-coach > .img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card.card-coach > .img > img{
+    border-radius: 50%;
+    width: 65%;
+    box-shadow: 0 0 15px 3px var(--darkgreen-shadow);
+}
+
+.card-coach p.name{
+    font-weight: 600;
+    font-size: 2.4rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+.card-coach.mid{
+    transform: scale(1.2);
+}
+
+.card-coach.mid li:nth-last-child(1){
+    font-weight: 500;
+    text-shadow: var(--darkgreen-shadow);
+    font-style: oblique;
+}
