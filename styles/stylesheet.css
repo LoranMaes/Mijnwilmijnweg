@@ -6,6 +6,7 @@
     --lightpastelgreen: #E6EEE5;
     --pastelgreen: #C8E5C7;
     --lightestpastelgreen: #E6FBE6;
+    --linear-buy: linear-gradient(#FDFFFD, #F2F6EC);
 
     --white-shadow: rgba(255, 255, 255, 0.15);
     --darkgreen-shadow: rgb(1, 48, 34, 0.15);
@@ -21,6 +22,7 @@ html{
 body{
     margin: 0;
     background: var(--white);
+    overflow-x: hidden;
 }
 
 
@@ -71,29 +73,35 @@ h1{
 }
 
 /* COMPONENTS */
+a.button,
 button{
     position: relative;
     z-index: 10;
     border: 2px solid var(--darkgreen);
-    padding: 1rem 3rem;
+    padding: .75rem 3rem;
     font-size: 16px;
     border-radius: .5rem;
     cursor: pointer;
     transition: 250ms;
     height: fit-content;
     width: fit-content;
+    text-decoration: none;
+    margin: 0 auto;
 }
 
+a.button:hover,
 button:hover{
     box-shadow: 0 0 8px 8px var(--darkgreen-shadow);
     transition: 250ms;
 }
 
+a.button.filled,
 button.filled{
     color: var(--white);
     background-color: var(--darkgreen);
 }
 
+a.button.open,
 button.open{
     color: var(--darkgreen);
     background-color: var(--white);
@@ -203,6 +211,7 @@ header .nav-link:not(.nav-link.login)::after,
     height: 2px;
     background-color: var(--primary);
     border-radius: 5rem;
+    opacity: 0;
     transition: all 250ms;
 }
 
@@ -210,6 +219,7 @@ header .nav-link:not(.nav-link.login):hover::after,
 .left-footer a:hover::after{
     width: 130%;
     margin-left: -15%;
+    opacity: 1;
     transition: all 250ms;
 }
 
@@ -230,10 +240,17 @@ header a.nav-link.login:hover{
     transition: 350ms;
 }
 
+#hamburger{
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
 /* FOOTER */
 footer{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .bottom{
@@ -304,6 +321,26 @@ footer .footer{
 
 .footer .bottom p{
     margin: 0;
+}
+
+.vector-footer{
+    top: -80%;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.footer{
+    position: relative;
+    z-index: 5;
+    background-color: #f9f9f9f9;
+}
+
+.vector-four{
+    background-image: url(../assets/background/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ANIMATIONS */

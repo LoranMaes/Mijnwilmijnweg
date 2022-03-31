@@ -1,0 +1,252 @@
+main{
+    position: relative;
+    background-color: var(--linear-buy);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 15rem
+}
+
+.vector{
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    z-index: 2;
+}
+
+.vector-one{
+    top: 40rem;
+    background-image: url(../../assets/background/kooppagina/first.svg);
+}
+.vector-two{
+    top: 115rem;
+    background-image: url(../../assets/background/kooppagina/second.svg);
+}
+
+.filling{
+    position: absolute;
+    width: 100%;
+}
+
+.filling-one{
+    background-color: var(--lightestpastelgreen);
+    top: 80rem;
+    height: 40rem;
+}
+
+.fold, .box-information{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-information{
+    margin-bottom: 12.5rem;
+}
+
+.fold h1{
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.fold h2{
+    margin-top: 0rem;
+}
+
+.fold h3{
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.top-fold{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    padding: clamp(1rem, 8vw, 4rem)
+}
+
+.container .fold hr{
+    width: 10%;
+    border: 1px solid var(--primary);
+    border-radius: 5rem;
+}
+
+.top-fold .img-big{
+    background-image: url(../../assets/img/box-coaching.png);
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    height: 32.5vh;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px 4px var(--dark-shadow);
+}
+
+.info-package .other-option{
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+.info-package .other-option img,
+.info-package .other-option div>p{
+    transition: all 250ms;
+}
+
+.info-package .other-option:hover img{
+    box-shadow: 0 0 10px 5px var(--dark-shadow);
+    transition: 250ms;
+}
+
+.info-package .other-option:hover div>p{
+    text-decoration: underline;
+    transition: 250ms;
+}
+
+.other-option + a.button{
+    display: block;
+    margin: 0;
+    margin-top: 1.5rem
+}
+
+.info-package .other-option p.title-other{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info-package .other-option p.price-other{
+    margin-top: 0;
+}
+
+.info-package .other-option img{
+    width: 10rem;
+    height: min-content;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px 2px var(--dark-shadow);
+}
+
+.fold .bottom-fold{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.bottom-fold h2{
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.bottom-fold h2::after{
+    position: absolute;
+    content: '';
+    background-image: url(../../assets/icons/arrow.svg);
+    width: 3.5rem;
+    height: 2rem;
+    bottom: -2.5rem;
+    left: 50%;
+    background-repeat: no-repeat;
+}
+
+.box-information .box-short ul li{
+    font-size: 1.6rem;
+}
+
+.box-short{
+    margin-bottom: 7.5rem;
+}
+
+.box-information{
+    gap: 3rem
+}
+
+.box-information .box-card{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+}
+
+.box-information .box-card.alternate{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box-card hr{
+    width: 15%;
+    border: 1px solid var(--primary);
+    margin-left: 2.5rem;
+}
+
+.box-information .box-card p.extra{
+    max-width: 650px;
+}
+
+.box-information h2{
+    margin-top: 0;
+}
+
+@media screen and(max-width: 650px) {
+    /* HEADER STUFF */
+    header nav{
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    header div{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    #hamburger.active + nav{
+        position: relative;
+        flex-direction: column;
+        visibility: visible;
+
+        z-index: 1;
+        background-color: var(--white);
+        padding-right: 0;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    #hamburger.active ~ main{
+        padding-top: 20rem;
+    }
+
+    header{
+        padding: 0 5rem;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    #hamburger{
+        height: 2.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        visibility: visible;
+        position: relative;
+        z-index: 1;   
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #hamburger span{
+        background-color: var(--primary);
+        width: 25px;
+        height: 3px;
+        border-radius: 1rem;
+    }
+}
