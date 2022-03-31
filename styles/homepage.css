@@ -175,3 +175,40 @@
     text-shadow: var(--darkgreen-shadow);
     font-style: oblique;
 }
+
+@media screen and (max-width: 650px) {
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer{
+        margin-top: 0;
+        z-index: 1;
+        padding: 0 4rem;
+    }
+    .second, .third, .fourth{
+        height: fit-content;
+    }
+    .container.missie{
+        height: fit-content;
+    }
+    .vector-one, .vector-four{
+        visibility: hidden;
+    }
+    form{
+        margin-bottom: 2.5rem;
+    }
+    .the-fold{
+        z-index: 5;
+        height: 30rem;
+    }
+    .footer .top{
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .left-footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
