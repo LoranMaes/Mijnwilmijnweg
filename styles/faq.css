@@ -1,0 +1,45 @@
+.main{
+    text-align: center;
+}
+
+.accordion {
+    background-color: #E6FBE6;
+    color: #013022;
+    display: flex;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 18px;
+    width: 30%;
+
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #C8E5C7;
+}
+
+.panel {
+    padding: 0 18px;
+    width: 30%;
+    background-color: #E6EEE5;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #013022;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.container{
+    justify-content: space-evenly;
+}

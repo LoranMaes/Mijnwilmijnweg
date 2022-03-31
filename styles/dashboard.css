@@ -1,3 +1,50 @@
+.svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.wave {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.container-volbracht {
+    background-color: #E6EEE5 ;
+    padding: 10px ;
+    border: 1px solid #013022;
+  }
+
+.container koptekst{
+    text-align: center
+}
+
+.mid-main{
+    text-align: center;
+}
+
+.right-main{
+    text-align: right;
+}
+
+.container-gebleven{
+    align-items: center;
+    outline-style: solid;
+    outline-width: .5em;
+    color: #013022;
+    
+}
+
+.p-gebleven{
+    text-align: right;
+
 .container{
     display: flex;
 }
