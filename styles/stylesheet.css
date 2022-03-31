@@ -192,17 +192,25 @@ header .nav-logo-link{
     align-items: center;
 }
 
-header .nav-link:not(.nav-link.login):hover::after{
+header .nav-link:not(.nav-link.login)::after,
+.left-footer a::after{
     content: '';
     position: absolute;
     left: 0;
     bottom: -.5rem;
     width: 0%;
-    margin-left: -15%;
+    margin-left: 50%;
     height: 2px;
     background-color: var(--primary);
     border-radius: 5rem;
-    animation: navbar-link 500ms forwards;
+    transition: all 250ms;
+}
+
+header .nav-link:not(.nav-link.login):hover::after,
+.left-footer a:hover::after{
+    width: 130%;
+    margin-left: -15%;
+    transition: all 250ms;
 }
 
 header a.nav-link{
@@ -288,18 +296,14 @@ footer .footer{
     flex-direction: column;
 }
 
+.left-footer a{
+    width: fit-content;
+    text-decoration: none;
+    position: relative;
+}
+
 .footer .bottom p{
     margin: 0;
 }
 
 /* ANIMATIONS */
-@keyframes navbar-link {
-    0%{
-        width: 0;
-        margin-left: 50%;
-    }
-    100%{
-        width: 130%;
-        margin-left: -15%;
-    }
-}
