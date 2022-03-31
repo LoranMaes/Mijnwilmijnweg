@@ -1,10 +1,10 @@
-
+<!--auteur Kimberley Neyt-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!--Stylesheet voor normalize en image replacement etc.-->
     <link rel="stylesheet" href="styles/normalize.css">
     <!--Hieronder hebben we de algemene stylesheet (kleurcodes, typografie etc) Bijna alles komt hier in-->
@@ -21,18 +21,32 @@
 <body>
 
     <header>
-        <img src="/assets/logo-big.png" alt="logo" class="logo">
-        <nav>
-            <a href="" class="nav-link">Home</a>
-            <a href="" class="nav-link">Coaching</a>
-            <a href="" class="nav-link">Over ons</a>
-            <a href="" class="nav-link">Contact</a>
-            <a href="" class="nav-link">Login</a>
-        </nav>
+        <div>
+            <a href="#" class="nav-logo-link">
+                <img src="./assets/logo-big.png" alt="logo" class="logo">
+            </a>
+            <nav>
+                <a href="#mission-home" class="nav-link">Home</a>
+                <a href="#coaching-home" class="nav-link">Coaching</a>
+                <a href="#about-home" class="nav-link">Over ons</a>
+                <a href="#contact-home" class="nav-link">Contact</a>
+                <a href="" class="nav-link login">Login</a>
+            </nav>
+        </div>
     </header>
-   <section>
+
+    <main id="main">
+        <div class="progressiebar">
+            <span class="progressie_background"></span>
+        </div>
+
+        <div class="wave1"></div>
+        <div class="first"></div>
+        <div class="wave2"></div>
+        <div class="second"></div>
+
        <form action="#">
-           <h2>Stap 2 : Ontspanningsactiviteiten </h2>
+         <h2>Stap 2 : Ontspanningsactiviteiten </h2>
            <p>Schrijf nu minstens drie van je favoriete activiteiten om te ontspannen</p>
            <div>
             <label for="message">Activiteit 1</label>
@@ -41,62 +55,74 @@
         </div>
         <div>
             <label for="message">Activiteit 2</label>
-            <textarea name="message" id="message" rows="5" cols="40"></textarea>
+            <textarea name="message" id="message2" rows="5" cols="40"></textarea>
             <span class="message error"></span>
         </div>
         <div>
             <label for="message">Activiteit 3</label>
-            <textarea name="message" id="message" rows="5" cols="40"></textarea>
+            <textarea name="message" id="message3" rows="5" cols="40"></textarea>
             <span class="message error"></span>
         </div>
         <div>
             <label for="message">Activiteit 4</label>
-            <textarea name="message" id="message" rows="5" cols="40"></textarea>
+            <textarea name="message" id="message4" rows="5" cols="40"></textarea>
             <span class="message error"></span>
         </div>
         <div>
             <label for="message">Activiteit 5</label>
-            <textarea name="message" id="message" rows="5" cols="40"></textarea>
+            <textarea name="message" id="message5" rows="5" cols="40"></textarea>
             <span class="message error"></span>
         </div>
        </form>
 
+       <div class="wave3"></div>
+       <div class="third"></div>
        <h2 class="bottomtext">Mooi zo!</h2>
+       <div class="wave4"></div>
+       <div class="forth"></div>
+
        <div class="alignbtn">
-        <a href="#" class="btn">TERUG NAAR DASHBOARD</a>
-        <a href="#" class="btn2">TERUG</a>
-        <a href="#" class="btn2">GA VERDER</a>
+        <button class="open">TERUG NAAR DASHBOARD</button>
+        <div class="alignbtn2">
+            <button class="filled">TERUG</button>
+            <button class="filled">VERDER</button>
         </div>
-   </section>
+        </div>
+    </main>
     <footer>
-        <div class="left-footer">
-            <a href="">Home</a>
-            <a href="">Coaching</a>
-            <a href="">Over ons</a>
-            <a href="">Login</a>
-        </div>
-        <div class="mid-footer">
-            <div class="icons-text">
-                <img src="/assets/icons/phone-icon.svg" alt="icon phone footer" class="icon">
-                <p class="footer-text">(+32)4 85 988 106</p>
+        <div class="vector-footer vector-four"></div>
+        <div class="footer">
+            <div class="top">
+                <div class="left-footer">
+                    <a href="#mission-home">Home</a>
+                    <a href="#coaching-home">Coaching</a>
+                    <a href="#about-home">Over ons</a>
+                    <a href="#contact-home">Login</a>
+                </div>
+                <div class="mid-footer">
+                    <div class="icons-text">
+                        <img src="./assets/icons/phone-icon.svg" alt="icon phone footer" class="icon">
+                        <p class="footer-text">(+32)4 85 988 106</p>
+                    </div>
+                    <div class="icons-text">
+                        <img src="./assets/icons/mail-icon.svg" alt="icon mail footer" class="icon">
+                        <p class="footer-text">candy@mijnwilmijnweg.be</p>
+                    </div>
+                    <div class="icons-text">
+                        <img src="./assets/icons/home-icon.svg" alt="icon home footer" class="icon">
+                        <p class="footer-text">Klaterbaan 48, 9300 Aalst</p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/Mijn-wil-mijn-weg-111542371351988/"><img src="./assets/icons/facebook-icon.png" alt="icon facebook footer" class="social-icon"></a>
+                    <a href="https://www.instagram.com/explore/locations/111542371351988/mijn-wil-mijn-weg/"><img src="./assets/icons/instagram-icon.png" alt="icon instagram footer" class="social-icon"></a>
+                    <a href="#"><img src="./assets/icons/whatsapp-icon.png" alt="icon whatsapp footer" class="social-icon"></a>
+                </div>
             </div>
-            <div class="icons-text">
-                <img src="/assets/icons/mail-icon.svg" alt="icon mail footer" class="icon">
-                <p class="footer-text">candy@mijnwilmijnweg.be</p>
+            <div class="bottom">
+                <p class="light small">Copyright &copy; 2022 - Mijn wil, mijn weg</p>
+                <p class="light small">Powered and designed by Coworking Team 14</p>
             </div>
-            <div class="icons-text">
-                <img src="/assets/icons/home-icon.svg" alt="icon home footer" class="icon">
-                <p class="footer-text">Klaterbaan 48, 9300 Aalst</p>
-            </div>
-            <div class="socials">
-                <img src="/assets/icons/facebook-icon.png" alt="icon facebook footer" class="social-icon">
-                <img src="/assets/icons/instagram-icon.png" alt="icon instagram footer" class="social-icon">
-                <img src="/assets/icons/whatsapp-icon.png" alt="icon whatsapp footer" class="social-icon">
-            </div>
-        </div>
-        <div class="bottom">
-            <p class="light">Copyright &copy; 2022 - Mijn wil, mijn weg</p>
-            <p class="light">Powered and designed by Coworking Team 14</p>
         </div>
     </footer>
     <script src="/scripts/index.js"></script>

@@ -14,6 +14,12 @@ fieldset > ul{
 
 }
 
+main#main{
+    width: 69.5%;
+}
+
+
+
 
 div{
     margin-bottom: 4em;
@@ -67,10 +73,9 @@ input[type=text]{
     margin-bottom: 1%;
 }
 
-.btn{
-    margin-right: 17%;
-}
-
 iframe{
     margin-bottom: 4em;
 }
+
+
+
