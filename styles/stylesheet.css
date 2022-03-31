@@ -48,6 +48,10 @@ p, a{
     line-height: 2.4rem;
 }
 
+p.small{
+    font-size: 12px;
+}
+
 h3{
     font-size: 2.4rem;
     line-height: 3.6rem;
@@ -217,10 +221,73 @@ header a.nav-link.login:hover{
 }
 
 /* FOOTER */
-.footer div{
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom{
+    text-align: center;
+}
+.footer > div{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+.footer .left-footer{
+    display: flex;
+}
+
+.footer .left-footer a{
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+footer .footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.footer .top{
+    display: flex;
+    justify-content: space-between;
+    gap: 25rem
+}
+
+.footer .top .mid-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .top .mid-footer .icons-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
+.footer .icons-text img{
+    width: 2.5rem;
+}
+
+.footer .socials{
+    display: flex;
+    gap: 2rem;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.left-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .bottom p{
+    margin: 0;
 }
 
 /* ANIMATIONS */
