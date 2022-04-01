@@ -28,6 +28,8 @@
 
 .mid-main{
     text-align: center;
+    position: relative;
+    z-index: 5;
 }
 
 .right-main{
