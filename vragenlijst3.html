@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheet voor normalize en image replacement etc.-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!--Hieronder hebben we de algemene stylesheet (kleurcodes, typografie etc) Bijna alles komt hier in-->
+    <!--Hieronder is het de specifieke stylesheet voor de homepage-->
+    <link rel="stylesheet" href="styles/vragenlijst.css">
+    <link rel="stylesheet" href="styles/vragenlijst3.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Mijn wil mijn weg - Online Coaching Traject - Candy Junius</title>
+</head>
+<body>
+
+    <header>
+        <img src="/assets/logo-big.png" alt="logo" class="logo">
+        <nav>
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Coaching</a>
+            <a href="" class="nav-link">Over ons</a>
+            <a href="" class="nav-link">Contact</a>
+            <a href="" class="nav-link">Login</a>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="progressiebar">
+            <span class="progressie_background"></span>
+        </div>
+
+        <div class="wave1"></div>
+        <div class="first"></div>
+        <div class="wave2"></div>
+        <div class="second"></div>
+       <form action="#">
+           <h2>Stap 3 : Jouw talenten, relfectiemoment</h2>
+           <p>Proficiat met het invullen van de talentenonderzoek. 
+            Neem de tijd om dit te laten bezinken en bekijk onderstaande filmpje om je meer inzichten te geven in wat talenten echt betekenen.</p>
+           <iframe width="650" height="522" src="https://www.youtube.com/embed/vE19F4cAeFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+           <div>
+            <fieldset>
+                <legend>Herken je jezelf in deze talenten?</legend>
+                <ul>
+                 <li>
+                       <input type="radio" id="ja" name="talenten" value="ja" required > 
+                       <label for="ja">Ja helemaal</label>
+                </li>
+                <li>
+                 <input type="radio" id="beetje" name="talenten" value="beetje"> 
+                 <label for="beetje">Een beetje</label>
+                </li>
+
+                <li>
+                 <input type="radio" id="nee" name="talenten" value="nee"> 
+                 <label for="nee">Nee helemaal niet</label>
+                </li>
+             </ul>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="message">Mogelijks ben je nog niet in een situatie terecht gekomen waar je jouw talent kan inzetten. Welke talenten zou je willen gaan ontdekken in jezelf of meer gaan inzetten?</label>
+            <textarea name="message" id="message" rows="5" cols="40"></textarea>
+            <span class="message error"></span>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Past het omschreven gedrag bij jou wanneer je onder druk wordt gezet of in stress situaties terecht komt?</legend>
+                <ul>
+                 <li>
+                       <input type="radio" id="ja" name="talenten" value="ja" required > 
+                       <label for="ja">Ja helemaal</label>
+                </li>
+                <li>
+                 <input type="radio" id="beetje" name="talenten" value="beetje"> 
+                 <label for="beetje">Een beetje</label>
+                </li>
+
+                <li>
+                 <input type="radio" id="nee" name="talenten" value="nee"> 
+                 <label for="nee">Nee helemaal niet</label>
+                </li>
+             </ul>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="firstname">Welke 2 talenten zou je mee aan de slag willen gaan?</label>
+            <input type="text" name="firstname" id="firstname" autocomplete="given-name" tabindex="0" required autofocus>
+            <input type="text" name="firstname" id="firstname" autocomplete="given-name" tabindex="0" required autofocus>
+        </div>
+
+       </form>
+
+       <h2 class="bottomtext">Ga zo verder!!!</h2>
+       <div class="alignbtn">
+        <a href="#" class="btn">TERUG NAAR DASHBOARD</a>
+        <a href="#" class="btn2">TERUG</a>
+        <a href="#" class="btn2">GA VERDER</a>
+        </div>
+    </main>
+    <footer>
+        <div class="left-footer">
+            <a href="">Home</a>
+            <a href="">Coaching</a>
+            <a href="">Over ons</a>
+            <a href="">Login</a>
+        </div>
+        <div class="mid-footer">
+            <div class="icons-text">
+                <img src="/assets/icons/phone-icon.svg" alt="icon phone footer" class="icon">
+                <p class="footer-text">(+32)4 85 988 106</p>
+            </div>
+            <div class="icons-text">
+                <img src="/assets/icons/mail-icon.svg" alt="icon mail footer" class="icon">
+                <p class="footer-text">candy@mijnwilmijnweg.be</p>
+            </div>
+            <div class="icons-text">
+                <img src="/assets/icons/home-icon.svg" alt="icon home footer" class="icon">
+                <p class="footer-text">Klaterbaan 48, 9300 Aalst</p>
+            </div>
+            <div class="socials">
+                <img src="/assets/icons/facebook-icon.png" alt="icon facebook footer" class="social-icon">
+                <img src="/assets/icons/instagram-icon.png" alt="icon instagram footer" class="social-icon">
+                <img src="/assets/icons/whatsapp-icon.png" alt="icon whatsapp footer" class="social-icon">
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="light">Copyright &copy; 2022 - Mijn wil, mijn weg</p>
+            <p class="light">Powered and designed by Coworking Team 14</p>
+        </div>
+    </footer>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

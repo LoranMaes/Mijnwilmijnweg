@@ -7,7 +7,9 @@
     --lightpastelgreen: #E6EEE5;
     --pastelgreen: #C8E5C7;
     --lightestpastelgreen: #E6FBE6;
+
     --linear-buy: linear-gradient(#FDFFFD, #F2F6EC);
+
 
     --white-shadow: rgba(255, 255, 255, 0.15);
     --darkgreen-shadow: rgb(1, 48, 34, 0.15);
@@ -22,8 +24,10 @@ html{
 
 body{
     margin: 0;
+
     background: var(--white);
     overflow-x: hidden;
+
 }
 
 
@@ -74,11 +78,14 @@ h1{
 }
 
 /* COMPONENTS */
+
 a.button,
+
 button{
     position: relative;
     z-index: 10;
     border: 2px solid var(--darkgreen);
+    padding: 1rem 3rem;
     padding: .75rem 3rem;
     font-size: 16px;
     border-radius: .5rem;
@@ -86,6 +93,8 @@ button{
     transition: 250ms;
     height: fit-content;
     width: fit-content;
+}
+
     text-decoration: none;
     margin: 0 auto;
 }
@@ -102,6 +111,9 @@ button.filled{
     background-color: var(--darkgreen);
 }
 
+button.open{
+    color: var(--darkgreen);
+    background-color: var(--white);
 a.button.open,
 button.open{
     color: var(--darkgreen);
@@ -212,7 +224,7 @@ header .nav-link:not(.nav-link.login)::after,
     background-color: var(--primary);
     border-radius: 5rem;
     opacity: 0;
-    transition: all 250ms;
+-    transition: all 250ms;
 }
 
 header .nav-link:not(.nav-link.login):hover::after,
@@ -323,6 +335,7 @@ footer .footer{
     margin: 0;
 }
 
+/* ANIMATIONS */
 .vector-footer{
     top: -80%;
     width: 100%;

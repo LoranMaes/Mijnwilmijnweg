@@ -3,8 +3,8 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    
 }
-
 
 textarea {
     display: block;
@@ -16,34 +16,31 @@ textarea {
     border-radius: .3rem;
     margin-top: 1.6rem;
     font-size: 16px;
+
 }
 
+main#main{
+    width: 69.5rem;
+}
+
+.alignbtn2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.filled{
+    margin-right: 2%;
+}
 
 h2.bottomtext, .alignbtn{
     position: relative;
     z-index: 5;
 }
 
-@media (max-width:990px) {
-    body{
-        max-width: 100%;
-    }
 
-    header,footer{
-        max-width: 100%;
-    }
-
-    footer{
-        position: absolute;
-        height:auto;
-    }
-
-    main#main{
-        margin:0%;
-        width:100%;
-    }
-    
-}
 
 
 

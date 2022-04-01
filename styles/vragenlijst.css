@@ -1,0 +1,184 @@
+:root{
+    --color-section: #C8E5C7;
+    --button-color: #013022;
+    --border-radius: 3px;
+    --progressie: #88C1F6;
+    --first: #E6EEE5;
+}
+
+main#main{
+    background-color: var(--color-section);
+    margin : 0 auto;
+    width: fit-content;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.progressiebar{
+    display: flex;
+    justify-content: center;
+    height: 1.6rem;
+    margin-bottom: -10%;
+}
+
+
+.progressiebar span.progressie_background{
+    position: relative;
+    height: 100%;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5rem;
+}
+
+span.progressie_background::before{
+    position: absolute;
+    content: '15%';
+    width: fit-content;
+    height: fit-content;
+    color: #333;
+    font-size: 16px;
+    margin-top: -2.5rem;
+    margin-left: 12%;
+}
+
+span.progressie_background::after{
+    position: absolute;
+    content: "";
+    background-color: var(--progressie);
+    height: 100%;
+    border-radius: 5rem;
+    width: 15%;
+}
+
+h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 1.25em;
+}
+
+label{
+    display: block;
+    font-size: 2.8rem;
+    margin-bottom: 0.5em;
+}
+
+input{
+    border: 1px solid #ccc;
+    font-size : 1.6rem;
+    padding: 0.75em;
+    width: 90%;
+    width: calc(100% - 1.5em);
+    }
+
+
+div{
+    margin-bottom: 1.75em;
+}
+
+textarea{
+    resize: none;
+}
+
+form{
+    z-index: 5;
+}
+
+form, .progressiebar{
+    position: relative;
+    padding: clamp(2rem, 12vw, 5rem)
+}
+
+.alignbtn{
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.bottomtext{
+    text-align: center;
+    margin-top: 3.8rem;
+    margin-bottom: 3em;
+}
+
+main > .wave1{
+    position: absolute;
+    background-image: url(../assets/background/vraaglijstwave1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 25rem;
+    width: 100% ;
+    margin-top: 35rem;
+    top: 10%;
+}
+
+
+main > .wave2{
+    position: absolute;
+    background-image: url(../assets/background/vraaglijstwave2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 20rem;
+    width: 100% ;
+    top: 41%;
+}
+
+main > .wave3{
+    position: absolute;
+    background-image: url(../assets/background/vraaglijstwave3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 15rem;
+    width: 100% ;
+    margin-bottom: 20%;
+    bottom: 2%;
+
+}
+
+main > .wave4{
+    position: absolute;
+    background-image: url(../assets/background/vraaglijstwave4.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    
+    height: 16rem;
+    width: 100% ;
+    margin-bottom: 10%;
+    bottom: -2.5%;
+
+}
+
+header, footer{
+    background-color: white;
+}
+
+header{
+    margin-bottom: 4rem;
+}
+
+footer{
+    margin-top: 12rem;
+}
+
+@media(max-width:990px){
+    body{
+        width: max-content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

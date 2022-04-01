@@ -1,0 +1,103 @@
+
+main{
+    text-align: center;
+    margin: 12rem;
+}
+
+body{
+    background-color: white;
+    
+}
+
+section{
+    display: flex;
+    margin-top: 12rem;
+    gap : 20%;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    margin-top: 9%;
+    width: 70%;
+}
+
+p{
+    margin: 5% 10%;
+   
+}
+.btn-margin{
+    margin-top: 10%;
+}
+
+.wave1{
+    position: absolute;
+    background-image: url(../assets/background/vectormissie.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 40rem;
+    width: 100%;
+    bottom: -100%;
+    z-index: -1;
+    margin-left: -12rem;
+}
+.wave2{
+    position: absolute;
+    background-image: url(../assets/background/vectormissie2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 50rem;
+    width: 100%;
+    margin-top: 35rem;
+    bottom: -150%;
+    z-index: -1;
+    margin-left: -12rem;
+
+}
+
+.wave3{
+    position: absolute;
+    background-image: url(../assets/background/vectormissie4.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 50rem;
+    width: 100%;
+    margin-top: 35rem;
+    top: -35.5%;
+    z-index: -1;
+    margin-left: -12rem;
+
+}
+
+.wave4{
+    position: absolute;
+    background-image: url(../assets/background/missievector3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 35rem;
+    width: 100%;
+    margin-top: 35rem;
+    top: 25%;
+    z-index: -3;
+    margin-left: -12rem;
+}
+
+
+
+footer{
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
