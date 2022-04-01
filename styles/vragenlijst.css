@@ -153,18 +153,6 @@ main > .wave4{
 
 }
 
-header, footer{
-    background-color: white;
-}
-
-header{
-    margin-bottom: 4rem;
-}
-
-footer{
-    margin-top: 12rem;
-}
-
 @media(max-width:990px){
     body{
         width: max-content;
