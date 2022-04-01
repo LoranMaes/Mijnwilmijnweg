@@ -114,6 +114,8 @@ button.filled{
 button.open{
     color: var(--darkgreen);
     background-color: var(--white);
+}
+
 a.button.open,
 button.open{
     color: var(--darkgreen);
