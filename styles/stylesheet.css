@@ -80,7 +80,6 @@ h1{
 /* COMPONENTS */
 
 a.button,
-
 button{
     position: relative;
     z-index: 10;
@@ -93,8 +92,6 @@ button{
     transition: 250ms;
     height: fit-content;
     width: fit-content;
-}
-
     text-decoration: none;
     margin: 0 auto;
 }
@@ -226,7 +223,7 @@ header .nav-link:not(.nav-link.login)::after,
     background-color: var(--primary);
     border-radius: 5rem;
     opacity: 0;
--    transition: all 250ms;
+    transition: all 250ms;
 }
 
 header .nav-link:not(.nav-link.login):hover::after,
