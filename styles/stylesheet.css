@@ -104,7 +104,6 @@ button.filled{
 a.button.open,
 button.open{
     color: var(--darkgreen);
-    background-color: var(--white);
 }
 
 p.subtitle{
